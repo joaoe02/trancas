@@ -1,0 +1,609 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(238, 205, 224);
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 9999;
+}
+.logo h1{  
+
+    font-family: 'Lobster', cursive;
+    color: #f5c2c1;
+    font-size: 34px;
+}
+.logo{
+    flex: 20%;
+    margin-left: 10%;
+    /*border: 1px solid red;*/
+    text-align: left;
+}
+.logo:hover{
+    background-color: none;
+
+}
+
+.menu{
+    flex: 70%;
+    /*border: 1px solid green;*/
+    text-align: right;
+    padding: 20px;
+    padding-right: 130px;
+
+}
+
+.menu a{
+    color: pink;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover{
+    color: white;
+    border-top: 4px solid #f5c2c1 ;
+}
+
+#botao{
+    background-color: rgb(168, 101, 157);
+    padding: 10px 25px;
+    color: black;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#botao:hover{
+    border: none;
+    color: rgb(168, 101, 157);
+    background: black;
+}
+
+.header{
+    margin-top: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.headerline{
+    margin-left: 10%;
+    flex: 40%;
+    /* border: 1px solid black; */
+}
+
+.headerline h2{
+    
+    font-weight: 900;
+    font-size: 20px;
+    color: cornflowerblue;
+    padding: 0;
+    margin: 0;
+}
+
+.headerline p{
+    font-family: 'Diphylleia', serif;
+    color: gray;
+    text-align: left;
+}
+
+.contact-btn{
+    display: inline-block;
+    background: palevioletred;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    
+
+}
+
+.contact-btn:hover{
+    background: black;
+
+}
+
+.img-headline{
+    position: relative;
+    top: 50px;
+    margin-right: 10%;
+    flex: 40%;
+    /* border: 1 px solid pink; */
+    text-align: center;
+}
+
+section{
+
+    margin-top: 80px;
+    /* border: 1px solid black; */
+    margin-left: 5%;
+    margin-left: 5%;
+    padding: 5%;
+
+    
+}
+
+section h2{
+    text-align: center;
+    padding-bottom: 5%;
+    width: 100%;
+    font-size: 80px;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    color: #f5c2c1;
+}
+
+#img1{
+    max-width: 25%;
+    margin-right: 10%;
+    flex: 20%;
+    /* border: 1 px solid pink; */
+    text-align: left;
+
+}
+
+#img2{
+    margin-right: 10%;
+    flex: 20%;
+    /* border: 1 px solid pink; */
+    text-align: center;
+
+}
+
+.slider{
+    position: absolute;
+    left: -2%;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    
+}
+
+.slide img{
+    width: 300px;
+    position: relative;
+    
+}
+
+.manual-navigation{
+    position: absolute;
+    left: 120px;
+    width: 300px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: right;
+}
+
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0,5s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+
+}
+
+
+
+.slider2{
+    position: absolute;
+    left: 29%;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides2{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides2 input{
+    display: none;
+}
+
+.slide2{
+    width: 25%;
+    position: relative;
+    
+}
+
+.slide2 img{
+    width: 300px;
+    position: relative;
+    
+}
+
+.manual-navigation2{
+    position: absolute;
+    left: 120px;
+    width: 300px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: right;
+}
+
+.manual-btn2{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0,5s;
+}
+container {
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+.card {
+      
+      padding: 10px;
+      margin-bottom: 20px;
+       flex-basis: 33.33%; 
+    }
+
+    .card img {
+        
+      width: 350px;
+      height: auto;
+    }
+.manual-btn2:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-btn2:hover{
+    background-color: white;
+}
+
+#rad1:checked ~ .second{
+    margin-left: 0;
+
+}
+
+#rad2:checked ~ .second{
+    margin-left: -25%;
+
+}
+
+#rad3:checked ~ .second{
+    margin-left: -50%;
+
+}
+.texto{
+    position: relative;
+    bottom: 251px;
+    left: 248px;
+    background-color: #f5c2c1;
+    width: 350px;
+}
+
+.texto2{
+    position: relative;
+    bottom: 859px;
+    left: 981px;
+    background-color: #f5c2c1;
+    width: 350px;
+}
+
+.texto3{
+    position: relative;
+    bottom: 870px;
+    left: 248px;
+    width: 350px;
+    background-color: #f5c2c1;
+}
+
+.texto4{
+    position: relative;
+    bottom: 1455px;
+    left: 982px;
+    width: 350px;
+    background-color: #f5c2c1;
+}
+
+.texto5{
+    position: relative;
+    bottom: 22px;
+    width: 350px;
+    background-color: #f5c2c1;
+}
+
+.texto6{
+    position: relative;
+    bottom: 22.5px;
+    width: 350px;
+    background-color: #f5c2c1;
+}
+
+.texto7{
+    position: relative;
+    bottom: 22px;
+    width: 350px;
+    background-color: #f5c2c1;
+}
+
+.texto8{
+    position: relative;
+    bottom: 255px;
+    left: 733.5px;
+    width: 350px;
+    background-color: #f5c2c1;
+}
+
+.texto9{
+    position: relative;
+    top: 1339px;
+    right: 734px;
+    width: 350px;
+    background-color: #f5c2c1;
+}
+
+.texto10{
+    position: relative;
+    bottom: 2632.5px;
+    left: 982px;
+    width: 350px;
+    background-color: #f5c2c1;
+}
+
+.texto11{
+    position: relative;
+    bottom: 23px;
+    right: px;
+    width: 350px;
+    background-color: #f5c2c1;
+}
+
+.texto12{
+    position: relative;
+    bottom: 23px;
+    left: px;
+    width: 350px;
+    background-color: #f5c2c1;
+}
+
+.texto13{
+    position: relative;
+    bottom: 29px;
+    right: px;
+    width: 350px;
+    background-color: #f5c2c1;
+}
+
+.texto14{
+    position: relative;
+    left: 982px;
+   bottom: 4463.9px;
+    width: 350px;
+    background-color: #f5c2c1;
+}
+
+.texto15{
+    position: relative;
+    bottom: 23px;
+    right: px;
+    width: 350px;
+    background-color: #f5c2c1;
+}
+
+.texto16{
+    position: relative;
+    bottom: 120.9px;
+    left: 734px;
+    width: 350px;
+    background-color: #f5c2c1;
+}
+
+
+#card1{
+    margin: 15%;
+}
+
+#card2{
+    height: 100%;
+    margin-left: 55%;
+    position: relative;
+    bottom: 825px;
+    left: 100px;
+    
+}
+
+#card3{
+    height: 100%;
+    margin-left: 55%;
+    position: relative;
+    bottom: 620px;
+    margin: 15%;
+    
+}
+
+#card4{
+    height: 100%;
+    margin-left: 55%;
+    position: relative;
+    bottom: 1420px;
+    left: 100px;
+    
+}
+
+#card5{
+    height: 100%;
+    margin-left: 55%;
+    position: relative;
+    bottom: 1180px;
+    margin: 15%;
+    
+}
+
+#card6{
+    height: 100%;
+    margin-left: 55%;
+    position: relative;
+    bottom: 2020px;
+    left: 100px;
+    
+}
+
+#card7{
+    height: 100%;
+    margin-left: 55%;
+    position: relative;
+    bottom: 1780px;
+    margin: 15%;
+    
+}
+
+#card8{
+    height: 100%;
+    margin-left: 55%;
+    position: relative;
+    bottom: 2900px;
+    left: 100px;
+    
+}
+
+#card9{
+    height: 100%;
+    margin-left: 55%;
+    position: relative;
+    bottom: 2380px;
+    margin: 15%;}
+
+    #card10{
+        height: 100%;
+        margin-left: 55%;
+        position: relative;
+        bottom: 3180px;
+        left: 100px;
+        
+    }    
+
+    #card11{
+        height: 100%;
+        margin-left: 55%;
+        position: relative;
+        bottom: 2980px;
+        margin: 15%;}
+    
+        #card12{
+            height: 100%;
+            margin-left: 55%;
+            position: relative;
+            bottom: 3800px;
+            left: 100px;
+            
+        }  
+
+        #card13{
+            height: 100%;
+            margin-left: 55%;
+            position: relative;
+            bottom: 3580px;
+            margin: 15%;}
+        
+            #card14{
+                height: 100%;
+                margin-left: 55%;
+                position: relative;
+                bottom: 4430px;
+                left: 100px;}
+        
+                #card15{
+                    height: 100%;
+                    margin-left: 55%;
+                    position: relative;
+                    bottom: 4180px;
+                    margin: 15%;}
+
+                    #card16{
+                        height: 100%;
+                        margin-left: 55%;
+                        position: relative;
+                        bottom: 5120px;
+                        left: 100px;}
+     
+footer{
+    
+    margin-top: 100px;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    border-top: pink solid 5px;
+
+}
+
+.Logo-rodape{
+    padding: 100px;
+    border: 1px solid white;
+}
+
+.Logo-rodape h1{
+    font-family: 'Lobster', cursive;
+    color: #f5c2c1;
+    font-size: 34px;
+}
+
